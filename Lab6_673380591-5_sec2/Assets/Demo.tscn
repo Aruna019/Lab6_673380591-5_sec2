@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bw4v27wgeubnu"]
+
+[ext_resource type="PackedScene" uid="uid://cngfngdth0fcr" path="res://Assets/Walking (1).tscn" id="1_7fmy2"]
+[ext_resource type="Script" uid="uid://c0l6mytbigllk" path="res://Assets/walking_(1).gd" id="2_expy2"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Walking1" parent="." instance=ExtResource("1_7fmy2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.06921, -0.0700736, -1.34345)
+script = ExtResource("2_expy2")
+
+[node name="Walking2" parent="." instance=ExtResource("1_7fmy2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.76666, -0.0700736, -1.34345)
+
+[node name="Walking3" parent="." instance=ExtResource("1_7fmy2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.48955, -0.0700736, -1.34345)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.8097, 1.56061, 7.40691)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.74872, 8.61684, -0.526985)
